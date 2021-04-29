@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Simon Dice !!!</title>
+  </head>
+
+  <body>
+    <main class="game" id="bg">
+      <div class="base">
+        <div class="table">
+            <div id="green" class="color green" data-color="green"></div>
+            <div id="red" class="color red" data-color="red"></div>
+            <div id="yellow" class="color yellow" data-color="yellow"></div>
+            <div id="blue" class="color blue" data-color="blue"></div>
+        </div>
+        <div class="column v"></div>
+        <div class="column h"></div>
+        <div class="center">
+            <div id="btn-start" class="start" onclick="startGame()"><span>Start!</span></div>
+        </div>
+        <div id="countDown" class="countDown hide"><span>Go!</span></div>
+    </div>
+    <div id="win" class="win hide">
+      <span>Perfecto</span>
+      <span>Ganaste</span>
+  </div>
+  <div id="lose" class="lose hide">
+      <span>Perdiste</span>
+      <span id="marcador"></span>
+  </div>
+
+    <!-- Librería para PopUp en Javascript -->
+    <script src="simondice.js"></script>
+   </body>
+</html>
