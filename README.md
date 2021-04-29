@@ -1,2 +1,2 @@
-# game_simondice
+# Juego Simon Dice
 Juego Simon Dice
